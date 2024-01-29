@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#Millicent Amegavie
+# Millicent Amegavie
 """ defines a rectangle class """
 
 
