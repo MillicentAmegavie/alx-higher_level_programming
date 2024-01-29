@@ -1,28 +1,28 @@
 #!/usr/bin/python3
 #Millicent Amegavie
-""" defines a rectangle class """
+"""defines a rectangle class"""
 
 
 class Rectangle:
-    """ represent a class rectangle """
+    """represent a class rectangle"""
     def __init__(self, width=0, height=0):
-        """ Initialize new rectangle with optional width and height"""
+        """Initialize new rectangle with optional width and height"""
         self.width = width
         self.height = height
 
     @property
     def width(self):
-        """ width """
+        """width"""
         return self.__width
 
     @property
     def height(self):
-        """ height """
+        """height"""
         return self.__height
 
     @width.setter
     def width(self, value):
-        """ width setter """
+        """width setter"""
         if type(value) is not int:
             raise TypeError("width must be an integer")
         if value < 0:
@@ -31,7 +31,7 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        """ height setter """
+        """height setter"""
         if type(value) is not int:
             raise TypeError("height must be an integer")
         if value < 0:
@@ -39,11 +39,11 @@ class Rectangle:
         self.__height = value
 
     def area(self):
-        """ returns area of rectangle """
+        """returns area of rectangle"""
         return self.__width * self.__height
 
     def perimeter(self):
-        """ returns perimiter of rectangle """
+        """returns perimiter of rectangle"""
         if self.__width is 0 or self.__height is 0:
             return 0
         return self.__width * 2 + self.__height * 2
