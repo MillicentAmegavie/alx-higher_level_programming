@@ -2,6 +2,7 @@
 # Millicent Amegavie
 """Defines a text file-reading function."""
 
+
 def read_file(filename=""):
     """ Function that reads from a file
 
